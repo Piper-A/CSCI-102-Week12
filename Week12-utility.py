@@ -14,3 +14,4 @@ def LoadFile(file_name):
     for line in lines:
         contents.append(line.strip())
     return PrintOutput(contents)
+
