@@ -55,3 +55,12 @@ def Union(list_one, list_two):
         if i not in union:
             union.append(i)
     return PrintOutput(union)
+
+def Intersection(list_one, list_two):
+    inter = []
+    for i in list_one:
+        if i in list_two:
+            union.append(i)
+    return PrintOutput(inter)
+
+
