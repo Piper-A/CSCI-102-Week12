@@ -48,3 +48,10 @@ def ScoreFinder(list_names, list_scores, player):
     else:
         out = "player not found"
     return PrintOutput(out)
+
+def Union(list_one, list_two):
+    union = list_one
+    for i in list_two:
+        if i not in union:
+            union.append(i)
+    return PrintOutput(union)
