@@ -63,4 +63,12 @@ def Intersection(list_one, list_two):
             union.append(i)
     return PrintOutput(inter)
 
+def NotIn(list_one, list_two):
+    not_list = []
+    for i in list_one:
+        if i not in list_two:
+            not_list.append(i)
+    return PrintOutput(not_list)
+
+
 
