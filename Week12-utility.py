@@ -31,3 +31,20 @@ def FinalWordCount(list_thing, string):
         if i.find(string) > -1:
             occur += 1
     return PrintOutput(occur)
+
+def ScoreFinder(list_names, list_scores, player):
+    low_names = []
+    for i in list_names:
+        low_names.append(i.lower())
+    player = player.lower()
+    index = -1
+    for j in range(len(low_names)):
+        if low_names[j] == player:
+            index = j
+    if index > -1:
+        outputname = list_names[index]
+        outputscore = list_scores[index]
+        out = outputname + ' ' + "got a score of" + ' ' + str(outputscore)
+    else:
+        out = "player not found"
+    return PrintOutput(out)
